@@ -22,7 +22,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
 
     steps:
        - name: Checkout
@@ -62,7 +62,7 @@ jobs:
          env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
-          tag_name: TWRP_10.0
-          name: TWRP-KD7
+          tag_name: TWRP_12.1
+          name: TWRP-m33x
           files: | 
-            work/out/target/product/KD7/recovery.img
+            work/out/target/product/m33x/recovery.img
